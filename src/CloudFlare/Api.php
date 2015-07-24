@@ -216,7 +216,7 @@ class Api {
 
 		if ($http_code != 200) {
 
-			return [
+			return (object) [
 				'error' => $error,
 				'http_code' => $http_code,
 				'method' => $method,
