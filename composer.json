@@ -1,6 +1,6 @@
 {
   "name": "mcstutterfish/cloudflare",
-  "description": "Cloudflare API V4 PHP wrapper",
+  "description": "Cloudflare API PHP wrapper",
   "license": "MIT",
   "keywords": [
     "cloudflare",
@@ -9,13 +9,19 @@
   "authors": [
     {
       "name": "Christopher M. Black",
-      "email": "cblack@devonium.com"
+      "email": "cblack@devonium.com",
+      "role": "Lead Developer"
     },
     {
       "name": "James Bell",
-      "email": "james@james-bell.co.uk"
+      "email": "james@james-bell.co.uk",
+      "role": "Original Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/mcstutterfish/cloudflare/issues",
+    "wiki": "https://github.com/mcstutterfish/cloudflare/wiki"
+  },
   "require": {},
   "require-dev": {
     "phpunit/phpunit": "*",
