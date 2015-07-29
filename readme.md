@@ -1,9 +1,6 @@
-#Cloudflare API V4 PHP wrapper
+#Cloudflare API PHP wrapper
 
-A work in progress library for the new Cloudflare API. The documentation for the new API  can be found at http://developers.cloudflare.com/next/.
-
-
-I have integrated most of the methods available but many features from the current API have not been implemented yet. For now I suggest you use the API wrapper written by [vexxhost](https://github.com/vexxhost) which can befound at https://github.com/vexxhost/CloudFlare-API.
+I'm gradually using more of Cloudflare's functionality snd adding more features. Please do submit any specific requests as it may be something I already know I need soon and can implement it.
 
 
 ##Installation
