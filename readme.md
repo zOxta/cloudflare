@@ -7,9 +7,10 @@ I'm gradually using more of Cloudflare's functionality snd adding more features.
 Installation should be done via composer, details of how to install composer can be found at https://getcomposer.org/
 
 
-Add `"mcstutterfish/cloudflare": "dev-feature"` to your `composer.json` file then:
+Add `"mcstutterfish/cloudflare": "dev-feature"` to your `composer.json` file
 
-Add ```    
+Add the following to the end of your `composer.json` file as well (don't forget the comma before the last object)
+```javascript    
 "repositories": [
       {
         "type": "vcs",
