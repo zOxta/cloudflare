@@ -25,10 +25,11 @@ class Dns extends Api {
 	 * @param string  $name    DNS record name
 	 * @param string  $content DNS record content
 	 * @param integer $ttl     Time to live for DNS record. Value of 1 is 'automatic'
+	 * @param boolean $proxied Whether create record is protected by CF or not
 	 *
 	 * @return array|mixed
 	 */
-	public function create($zone_identifier, $type, $name, $content, $ttl = 1) {
+	public function create($zone_identifier, $type, $name, $content, $ttl = 1, $proxied = false) {
 
 		$data = [
 			'type' => strtoupper($type),
@@ -36,6 +37,11 @@ class Dns extends Api {
 			'content' => $content,
 			'ttl' => $ttl
 		];
+		
+		# only honor the `proxied` parameter when it's a CNAME
+		if ($data['type'] === 'CNAME' && $proxied) {
+			$data['proxied'] = true;
+		}
 
 		return $this->post('zones/' . $zone_identifier . '/dns_records', $data);
 
