@@ -7,7 +7,15 @@ I'm gradually using more of Cloudflare's functionality snd adding more features.
 Installation should be done via composer, details of how to install composer can be found at https://getcomposer.org/
 
 
-Add `"mcstutterfish/cloudflare": "dev-master"` to your `composer.json` file
+Add `"mcstutterfish/cloudflare": "dev-feature"` to your `composer.json` file then:
+
+Add `    
+"repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/zOxta/cloudflare"
+      }
+    ]`
 
 Run `composer update` to install the latest version.
 
