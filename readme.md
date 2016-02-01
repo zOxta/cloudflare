@@ -9,13 +9,14 @@ Installation should be done via composer, details of how to install composer can
 
 Add `"mcstutterfish/cloudflare": "dev-feature"` to your `composer.json` file then:
 
-Add `    
+Add ```    
 "repositories": [
       {
         "type": "vcs",
         "url": "https://github.com/zOxta/cloudflare"
       }
-    ]`
+    ]
+```
 
 Run `composer update` to install the latest version.
 
